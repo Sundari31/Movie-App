@@ -18,4 +18,3 @@ Users can create a personal watchlist, filter by genre, and browse movies with p
 - 📦 Context API  
 
 Live Demo: [Movie-App](https://movie-app-lemon-phi-68.vercel.app/)  
-GitHub Repo: [Movie-App Repository](https://github.com/Sundari31/Movie-App/tree/main)  
