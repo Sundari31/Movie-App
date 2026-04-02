@@ -7,15 +7,16 @@ import { WatchListProvider } from './context/WatchListContext'
 
 function App() {
   const [count, setCount] = useState(0)
+    const [search, setSearch] = useState("")
 
   return (
     <>
     <WatchListProvider>
       <BrowserRouter>
-      <Navbar />
+      <Navbar onSearch={setSearch} />
       <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='/watchlist' element={<Watchlist />}></Route>
+        <Route path='/' element={<Home search={search} />}></Route>
+        <Route path='/watchlist' element={<Watchlist search={search} />}></Route>
       </Routes>
       </BrowserRouter>
     </WatchListProvider>
